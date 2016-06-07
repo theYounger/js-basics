@@ -14,24 +14,25 @@ var myName = "Kyle";
  * if it should be true if your person object is at least 16 years old
  */
 
- var canDrive = function() {
-    return person.age >= 16;
- };
+ var canDrive = false;
+ if (person.age >= 16) {
+  canDrive = true;
+ }
+ // ex ternary operator: var canDrive = person.age >= 16 ? true : false;
 
 /* Create a function called `greet`,
  * it should take a 1 parameter, `name`
  * and it should print "Hello, my name is {name}"
  */
 
- function greet (name){
+ function greet(name) {
     console.log("Hello, my name is " + name);
  }
-
 /* Create an array called `dataTypes` with atleast 1 of every data type;
  * (there are 6 different data types);
  */
 
- dataTypes = ["dataTest", 247, 24 > 7, {test: "value"}, undefined, [2, 4, 7, "testValue"]];
+ var dataTypes = ["dataTest", 247, false, {test: "value"}, undefined, null];
 
 /* Create a `dog` object
  * it should have a `bark` function that makes your dog bark!
